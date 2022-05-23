@@ -1,0 +1,230 @@
+html, body{
+    margin: 0;
+    color: black;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    display:flex;
+  }
+  
+*{
+  box-sizing: border-box;
+}
+
+.logo{
+  max-width: 60%;
+  display:grid;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+
+
+}
+
+ul {
+  overflow: hidden;
+  border-radius: 10px;
+  display: grid;
+  list-style-type:none;
+}
+
+.data {
+  background-color:#f8f8f8;   
+  margin:5px;
+  max-width: 60%;
+  list-style-type:none;
+  font-size:15px;
+  display: grid;
+  margin-left: -25px;
+  padding:5px;
+  padding-left:10px;
+  font-weight: 600;
+  border-radius: 10px;
+}
+
+.alt{
+  background-color:#f8f8f8;   
+  margin:5px;
+  max-width: 60%;
+  list-style-type:none;
+  font-size:15px;
+  display: grid;
+  margin-left: -25px;
+  padding:5px;
+  padding-left:10px;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor:pointer;
+}
+
+.data:hover {
+  background-color: #899499 !important; 
+  color:white;
+  cursor:pointer !important;
+}
+
+.txt{
+  font-size:15px;
+  width:60%;
+}
+
+ul li .alt:hover {
+  background-color: #899499; 
+  color:white;
+}
+
+.data.clicked {
+  background-color:#f75110;
+  color:white;
+  cursor:pointer;
+  display: grid;
+
+}
+
+
+.passos{
+  align-items: center;
+  justify-content: center;
+  display:flex;
+}
+
+.title{
+  font-family:'Lato';
+  font-weight:800;
+  color:darkslategray;
+  display: grid;
+  font-size:40px;
+  padding:10px;
+  margin: 10px;
+}
+  
+main{
+  width: 100%;
+  height: 100%;
+  display: grid;
+}
+
+ul.botoes{
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  z-index: 5;
+  width: 100%;
+  border-radius: 10%;
+  max-width: 60px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 0 auto;
+  text-align: center;
+
+}
+
+ul.botoes > li{
+  width: 100%;
+  display: block;
+  margin-bottom: 2px;
+  display: flex;
+  justify-content: center;
+  border-radius: 10%;
+
+}
+
+ul.botoes button{
+  background: #f75110;
+  border: 0;
+  border-radius: 10%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  width: 50%;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  cursor: pointer;
+  color: #fff;
+  margin:5px;
+  justify-content: center;
+
+
+  transition: width 0.3s ease-out background-color 0.3s ease-out;
+  font-weight: 600;
+  letter-spacing: 0.03rem;
+}
+
+ul.botoes button.botao-ativo{
+  width: 100%;
+  border-radius: 10%;
+  background: grey;
+}
+ul.botoes button:hover{
+  width: 100%;
+  border-radius: 10%;
+
+}
+
+.passos{
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  flex-grow: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  z-index:2;
+}
+
+.passos > div{
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  display: none;
+  /* opacity: 0; */
+}
+
+.passos > div.passo-ativo{
+  display: flex;
+}
+
+.passos > div > img{
+  width: 100%;
+  max-width: 860px;
+  align-self: center;
+  margin: auto;
+}
+
+.dot {
+  display: grid;
+  width: 60%;
+  gap: 5px; 
+  justify-content: center;
+}
+
+.next {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  width: 5%;
+  height:auto;
+  background-color: #f75110;
+  padding: 5px;
+  color: white;
+  font-weight: 800;
+  justify-content: center;
+  border-radius: 10px;
+
+}
+
+.dottin {
+  text-decoration: none;
+  display:flex;
+  text-decoration: none;
+  color:white;
+  width:100%;
+  height:100%;
+  justify-content: center;
+}
