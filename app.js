@@ -6,6 +6,7 @@ let answer = document.querySelector( '.explicacao' );
 // código executado ao clicar
 function aoClicar(event){
     let botaoAtual = event.target;
+    let dataAlvo = botaoAtual.dataset.alvo;// .passo-3
 
     let elementoAlvo = document.querySelector(dataAlvo);
     let passoAnterior = document.querySelector('.passo-ativo');
